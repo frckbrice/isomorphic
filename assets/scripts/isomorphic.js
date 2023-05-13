@@ -14,6 +14,11 @@ function display() {
   const str1 = document.querySelector("#str1").value;
   const str2 = document.querySelector("#str2").value;
 
+  // basic validation
+  if(str1.length == 0 || str2.length == 0) {
+    alert('NO EMPTY STRING ALLOWED');
+    return false;
+  }
   show.innerHTML = isIsomorphic(str1, str2);
 }
 
@@ -29,10 +34,10 @@ const isIsomorphic = (str1, str2) => {
     let ind1 = str1.indexOf(str1[i]);
     let ind2 = str2.indexOf(str2[i]);
     if (str2[ind1] !== str2[i] || str1[ind2] !== str1[i]) {
-      return "FALSE! Thes Strings are  not Isomorphic Strings";
+      return `<strong>FALSE!</strong> <span>Thes Strings ${str1} and ${str2} are  not Isomorphic Strings<span>`;
     }
   }
-  return "TRUE! Thes Strings are Isomorphic Strings";
+  return `<div class= 'to-show'><strong>TRUE!</strong> <span>Thes Strings ${str1} and ${str2} are Isomorphic Strings<span></div>`;
 };
 
 // let str1 = "egg";
