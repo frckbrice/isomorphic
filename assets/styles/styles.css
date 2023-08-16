@@ -10,8 +10,8 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba(0 0 0 / 50%), rgba(0 0 0 / 50%)),
-    url("../images/bgimag.jpeg");
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,9 +36,10 @@ h1 {
 }
 
 label {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-style: oblique;
   margin-bottom: 15px;
+  margin-left: 0.5rem;
 }
 
 .div-for-input {
@@ -58,18 +59,22 @@ label {
 #str1 {
   width: 40vw;
   height: 40px;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
 }
 
 .div-for-check {
+  display: flex;
+  justify-content: center;
   width: 100%;
   text-align: center;
   margin-top: 3rem;
-  /* margin-left: 5.5rem; */
+  margin-right: 100rem;
 }
 
 .btn {
   padding: 10px 20px;
-  width: 100px;
+  border-radius: 0.5rem;
 }
 
 footer {
@@ -79,8 +84,8 @@ footer {
   font-style: italic;
   font-size: small;
 }
+
 .display {
-  text-align: center;
   margin-top: 5rem;
   display: flex;
   justify-content: center;
@@ -90,9 +95,9 @@ footer {
   font-weight: bold;
 }
 
-.to-show { 
+/* .to-show { 
   display: block;
-}
+} */
 
 span {
   font-size: 1.25rem;
@@ -102,7 +107,8 @@ span {
   #str2,
   #str1 {
     width: 40vw;
-    height: 35px;
+    height: 50px;
+    font-size: 1.5rem;
   }
 
   .div-for-input {
@@ -116,15 +122,19 @@ span {
   .div-for-check {
     text-align: center;
     margin-top: 100px;
+    font-size: 1.5rem;
   }
 
   .btn {
     margin-left: 30px;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.2rem;
   }
   
   .display {
     margin-top: 15vh;
     width: 100%;
+    
   }
 }
 
@@ -150,21 +160,12 @@ span {
 
   .div-for-input {
     gap: 10px;
-    margin-left: 5px;
-    width: 95%;
+    margin: 0 5px;
+    width: 100%;
   }
 
-.btn {
+  .btn {
   margin-right: 30px;
-}
-
-  .main {
-    /* justify-content: flex-start; */
-    padding: 0;
-  }
-
-  h1 {
-    margin-left: 40px;
   }
 
   .display {
@@ -184,7 +185,7 @@ span {
 
   .div-for-check {
     margin-left: 0;
-    margin-top: 80vh;
+    margin-top: 400px;
   }
 
   h1 {
@@ -192,12 +193,15 @@ span {
     margin-left: 0;
   }
 
-  .display {
-    margin-top: 50vh;
-    margin-left: 10px;
-  }
-
   #str1, #str2 {
     width: 90%;
+    margin-left: 12px;
+  }
+
+  .display { 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 1.5rem;
   }
 }
