@@ -2,7 +2,7 @@
 const show = document.querySelector(".display");
 const check = document.querySelector(".btn");
 check.addEventListener("click", display);
-check.addEventListener("keyup", (e) => {
+check.addEventListener("keypress", (e) => {
   e.preventDefault();
   if (e.keyCode === 13) {
     display();
