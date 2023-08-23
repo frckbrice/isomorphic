@@ -13,9 +13,9 @@ body {
   background:
     linear-gradient(
       90deg,
-    rgba(2 0 36/ 100%) 0%,
-    rgba(9 9 121/ 100%) 35%,
-    rgba(0 212 255/ 100%) 100%
+      rgba(2 0 36/ 100%) 0%,
+      rgba(9 9 121/ 100%) 35%,
+      rgba(0 212 255/ 100%) 100%
     );
   overflow: hidden;
   background-position: center;
